@@ -1,0 +1,97 @@
+.pokemon-searcher {
+    background-color: yellow;
+    font-size: 20px;
+    width: 50%;
+    max-width: 400px;
+    border: 1px black solid;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+    z-index: 9999;
+
+    &__input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    // &__button {
+    //     cursor: pointer;
+    //     padding: 20px;
+    //     box-sizing: border-box;
+    //     text-align: center;
+    //     background: blue;
+    //     color: white;
+    //     font-weight: bold;
+    //     font-size: 16px;
+    //     border: 1px blue solid;
+    //     border-radius: 12px;
+    //     transition: all .5s;
+
+    //     &:hover {
+    //         opacity: .9;
+    //         transform: scale(1.1);
+    //     }
+    // }
+
+    &__result {
+        border: 1px black solid;
+        border-radius: 12px;
+        padding: 20px;
+        width: 90%;
+    }
+    
+    &__block {
+        background: rgb(156, 156, 0);
+        color: white;
+    }
+
+    &__moves {
+        max-height: 200px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: red;
+            border-radius: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgb(179, 179, 0);
+            border-radius: 2px;
+            height: 30px;
+        }
+    }
+
+    &__loader {
+        border: 3px solid lightgray; /* Light grey */
+        border-top: 3px solid blue; /* Blue */
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 2s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(174, 174, 4);
+}
