@@ -1,0 +1,26 @@
+.spinner {
+    width: 200px;
+    height: 40px;
+    border: 1px black solid;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 12px;
+
+    &__input {
+        height: 40px;
+        display:inline-block;
+        border: none;
+        width: 33.3333%;
+        text-align: center;
+    }
+
+    &__plus, &__minus {
+        height: 40px;
+        display:inline-block;
+        border: none;
+        width: 33.3333%;
+        cursor: pointer;
+    }
+}
